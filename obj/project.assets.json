@@ -482,24 +482,32 @@
     ]
   },
   "packageFolders": {
-    "/home/dorianc/.nuget/packages/": {}
+    "C:\\Users\\thene\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/dorianc/code/Advanced-Frontend-Final-Api/Advanced-Frontend-Final-Api.csproj",
+      "projectUniqueName": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Advanced-Frontend-Final-Api.csproj",
       "projectName": "Advanced-Frontend-Final-Api",
-      "projectPath": "/home/dorianc/code/Advanced-Frontend-Final-Api/Advanced-Frontend-Final-Api.csproj",
-      "packagesPath": "/home/dorianc/.nuget/packages/",
-      "outputPath": "/home/dorianc/code/Advanced-Frontend-Final-Api/obj/",
+      "projectPath": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Advanced-Frontend-Final-Api.csproj",
+      "packagesPath": "C:\\Users\\thene\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/dorianc/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\thene\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -512,6 +520,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -546,7 +559,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.110/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
