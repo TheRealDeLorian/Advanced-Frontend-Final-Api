@@ -367,7 +367,7 @@
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
-          "lib/net8.0/_._": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.Relational.dll": {
             "related": ".xml"
           }
         },
@@ -448,7 +448,7 @@
           "Microsoft.Extensions.Primitives": "8.0.0"
         },
         "compile": {
-          "lib/net8.0/_._": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
             "related": ".xml"
           }
         },
@@ -613,19 +613,57 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
-      "Swashbuckle.AspNetCore/6.6.2": {
+      "Npgsql/8.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Npgsql.EntityFrameworkCore.PostgreSQL/8.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.10",
+          "Microsoft.EntityFrameworkCore.Abstractions": "8.0.10",
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.10",
+          "Npgsql": "8.0.5"
+        },
+        "compile": {
+          "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore/6.9.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
-          "Swashbuckle.AspNetCore.Swagger": "6.6.2",
-          "Swashbuckle.AspNetCore.SwaggerGen": "6.6.2",
-          "Swashbuckle.AspNetCore.SwaggerUI": "6.6.2"
+          "Swashbuckle.AspNetCore.Swagger": "6.9.0",
+          "Swashbuckle.AspNetCore.SwaggerGen": "6.9.0",
+          "Swashbuckle.AspNetCore.SwaggerUI": "6.9.0"
         },
         "build": {
           "build/Swashbuckle.AspNetCore.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Swashbuckle.AspNetCore.props": {}
         }
       },
-      "Swashbuckle.AspNetCore.Swagger/6.6.2": {
+      "Swashbuckle.AspNetCore.Swagger/6.9.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.OpenApi": "1.6.14"
@@ -644,10 +682,10 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Swashbuckle.AspNetCore.SwaggerGen/6.6.2": {
+      "Swashbuckle.AspNetCore.SwaggerGen/6.9.0": {
         "type": "package",
         "dependencies": {
-          "Swashbuckle.AspNetCore.Swagger": "6.6.2"
+          "Swashbuckle.AspNetCore.Swagger": "6.9.0"
         },
         "compile": {
           "lib/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
@@ -660,7 +698,7 @@
           }
         }
       },
-      "Swashbuckle.AspNetCore.SwaggerUI/6.6.2": {
+      "Swashbuckle.AspNetCore.SwaggerUI/6.9.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
@@ -2118,22 +2156,61 @@
         "mono.texttemplating.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore/6.6.2": {
-      "sha512": "+NB4UYVYN6AhDSjW0IJAd1AGD8V33gemFNLPaxKTtPkHB+HaKAKf9MGAEUPivEWvqeQfcKIw8lJaHq6LHljRuw==",
+    "Npgsql/8.0.5": {
+      "sha512": "zRG5V8cyeZLpzJlKzFKjEwkRMYIYnHWJvEor2lWXeccS2E1G2nIWYYhnukB51iz5XsWSVEtqg3AxTWM0QJ6vfg==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore/6.6.2",
+      "path": "npgsql/8.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/Npgsql.dll",
+        "lib/net6.0/Npgsql.xml",
+        "lib/net7.0/Npgsql.dll",
+        "lib/net7.0/Npgsql.xml",
+        "lib/net8.0/Npgsql.dll",
+        "lib/net8.0/Npgsql.xml",
+        "lib/netstandard2.0/Npgsql.dll",
+        "lib/netstandard2.0/Npgsql.xml",
+        "lib/netstandard2.1/Npgsql.dll",
+        "lib/netstandard2.1/Npgsql.xml",
+        "npgsql.8.0.5.nupkg.sha512",
+        "npgsql.nuspec",
+        "postgresql.png"
+      ]
+    },
+    "Npgsql.EntityFrameworkCore.PostgreSQL/8.0.10": {
+      "sha512": "gFPl9Dmxih7Yi4tZ3bITzZFzbxFMBx04gqTqcjoL2r5VEW+O2TA5UVw/wm/XW26NAJ7sg59Je0+9QrwiZt6MPQ==",
+      "type": "package",
+      "path": "npgsql.entityframeworkcore.postgresql/8.0.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll",
+        "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.xml",
+        "npgsql.entityframeworkcore.postgresql.8.0.10.nupkg.sha512",
+        "npgsql.entityframeworkcore.postgresql.nuspec",
+        "postgresql.png"
+      ]
+    },
+    "Swashbuckle.AspNetCore/6.9.0": {
+      "sha512": "lvI+XHF21tkwXd2nDCLGJsdhdUYsY3Ax2fWUlvw81Oa6EedtnIAf5tThy8ZnPcz/9/TwsLgjgtX9ifOCIjbEPA==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore/6.9.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "build/Swashbuckle.AspNetCore.props",
-        "swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
+        "buildMultiTargeting/Swashbuckle.AspNetCore.props",
+        "swashbuckle.aspnetcore.6.9.0.nupkg.sha512",
         "swashbuckle.aspnetcore.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore.Swagger/6.6.2": {
-      "sha512": "ovgPTSYX83UrQUWiS5vzDcJ8TEX1MAxBgDFMK45rC24MorHEPQlZAHlaXj/yth4Zf6xcktpUgTEBvffRQVwDKA==",
+    "Swashbuckle.AspNetCore.Swagger/6.9.0": {
+      "sha512": "P316kpxx5DnDvJwNWW8iTAXkh9DVenAxFGe9v4OUS0gil+vitH7F1feXhCtVeHN/616EFNTMh4pV2lcr9kkw/w==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore.swagger/6.6.2",
+      "path": "swashbuckle.aspnetcore.swagger/6.9.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2156,14 +2233,14 @@
         "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.pdb",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.xml",
         "package-readme.md",
-        "swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
+        "swashbuckle.aspnetcore.swagger.6.9.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swagger.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore.SwaggerGen/6.6.2": {
-      "sha512": "zv4ikn4AT1VYuOsDCpktLq4QDq08e7Utzbir86M5/ZkRaLXbCPF11E1/vTmOiDzRTl0zTZINQU2qLKwTcHgfrA==",
+    "Swashbuckle.AspNetCore.SwaggerGen/6.9.0": {
+      "sha512": "FjeMR3fBzwVc5plfYjoHw9ptf8SOWMupvO9X35J5EgzT3L9dRqSxa+cBKzL8PwCyemY0xNrggQSB5+MFWx1axg==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore.swaggergen/6.6.2",
+      "path": "swashbuckle.aspnetcore.swaggergen/6.9.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2186,14 +2263,14 @@
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
         "package-readme.md",
-        "swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggergen.6.9.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggergen.nuspec"
       ]
     },
-    "Swashbuckle.AspNetCore.SwaggerUI/6.6.2": {
-      "sha512": "mBBb+/8Hm2Q3Wygag+hu2jj69tZW5psuv0vMRXY07Wy+Rrj40vRP8ZTbKBhs91r45/HXT4aY4z0iSBYx1h6JvA==",
+    "Swashbuckle.AspNetCore.SwaggerUI/6.9.0": {
+      "sha512": "0OxlWBFLl2gUESZX/K7QCTz9KctKy0VxHTvLIBcyWGD4z/fv5MCMW02qzYGcReLJr4yBnNDRzApKtLh6oBpe9A==",
       "type": "package",
-      "path": "swashbuckle.aspnetcore.swaggerui/6.6.2",
+      "path": "swashbuckle.aspnetcore.swaggerui/6.9.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2216,7 +2293,7 @@
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
         "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
         "package-readme.md",
-        "swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggerui.6.9.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
@@ -2540,8 +2617,10 @@
     "net8.0": [
       "Microsoft.AspNetCore.OpenApi >= 8.0.10",
       "Microsoft.EntityFrameworkCore >= 8.0.10",
+      "Microsoft.EntityFrameworkCore.Design >= 8.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.10",
-      "Swashbuckle.AspNetCore >= 6.6.2"
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 8.0.10",
+      "Swashbuckle.AspNetCore >= 6.9.0"
     ]
   },
   "packageFolders": {
@@ -2602,15 +2681,25 @@
             "target": "Package",
             "version": "[8.0.10, )"
           },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[8.0.10, )"
+          },
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
             "version": "[8.0.10, )"
           },
+          "Npgsql.EntityFrameworkCore.PostgreSQL": {
+            "target": "Package",
+            "version": "[8.0.10, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
-            "version": "[6.6.2, )"
+            "version": "[6.9.0, )"
           }
         },
         "imports": [
