@@ -1,35 +1,45 @@
-using Microsoft.EntityFrameworkCore;
-using MyApi.Data;
-
-
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddCors();
 
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-builder.Services.AddDbContextFactory<AppDbContext>(options => options.UseNpgsql(connectionString));
-
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+        .AddJwtBearer(options =>
+        {
+            options.TokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateIssuer = true,
+                ValidateAudience = true,
+                ValidateLifetime = true,
+                ValidateIssuerSigningKey = true,
+                ValidIssuer = "https://auth.snowse.duckdns.org/realms/advanced-frontend",
+                ValidAudience = "dorian-demo2",
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("your_secret_key"))
+            };
+        });
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+app.UseCors(
+  p => p.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin()
+);
+
+app.MapGet("/authOnly", () => 
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
-app.UseHttpsRedirection();
-
-app.MapGet("/health", () => Results.Ok("Healthy!"));
-
-app.MapGet("/temples", ()=> 
-{
-
+  Console.WriteLine("Hello World!");
+  return "Hello world auth"
 });
 
+app.MapGet("/public", () =>
+{
+Console.WriteLine("public endpoing");
+return "Hello world public";
+} ).AllowAnonymous();
 
 
 app.Run();
+
+
+//make sql file
+
+//post to pg container
+
+//scaffold from sql file to generate 
