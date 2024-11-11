@@ -7,4 +7,8 @@
     <RootNamespace>Advanced_Frontend_Final_Api</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.10" />
+  </ItemGroup>
+
 </Project>
