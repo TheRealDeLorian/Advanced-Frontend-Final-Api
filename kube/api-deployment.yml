@@ -20,10 +20,10 @@ spec:
         image: doriancottle/dorian-ss-api:${IMAGE_TAG}  
         ports:
         - containerPort: 8080
-      #   volumeMounts:
-      #   - name: cs-api-storage
-      #     mountPath: /storage  
-      # volumes:
-      # - name: cs-api-storage
-      #   persistentVolumeClaim:
-      #     claimName: cs-api-pvc 
+        volumeMounts:
+        - name: cs-api-storage
+          mountPath: /storage  
+      volumes:
+      - name: cs-api-storage
+        persistentVolumeClaim:
+          claimName: cs-api-pvc 
