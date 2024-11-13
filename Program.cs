@@ -8,10 +8,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-var connectionString = "Server=localhost;Database=db;User Id=user;Password=password;";
+var connectionString = "Server=dorian-db;Database=db;User Id=user;Password=password;";
 builder.Services.AddDbContextFactory<AppDbContext>(options => options.UseNpgsql(connectionString));
-builder.Services.AddCors();
 
+builder.Services.AddCors();
 
 var app = builder.Build();
 app.UseCors(c =>
