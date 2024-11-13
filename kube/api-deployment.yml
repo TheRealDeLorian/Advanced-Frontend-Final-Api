@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: cs-api
-        image: doriancottle/dorian-ss-api:${IMAGE_TAG}  
+        image: doriancottle/dorian-final-api:${IMAGE_TAG}  
         ports:
         - containerPort: 8080
         volumeMounts:
