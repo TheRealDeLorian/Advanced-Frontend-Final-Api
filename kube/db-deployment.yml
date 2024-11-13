@@ -40,4 +40,4 @@ spec:
           claimName: dorian-db-pvc
       - name: init-script
         configMap:
-          name: dorian-postgres-init
+          name: ss-postgres-init

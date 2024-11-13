@@ -31,6 +31,9 @@ jobs:
           for file in kube/*; do
               cat "$file" | envsubst | kubectl apply -f -;
           done
+
+          kubectl -n sacredsteps delete configmap ss-postgres-init || true
+          kubectl -n sacredsteps create configmap ss-postgres-init --from-file=./schema.sql
          
       
       
