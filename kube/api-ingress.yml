@@ -2,17 +2,17 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   namespace: sacredsteps
-  name: cs-api-ingress
-spec: 
+  name: dorian-final-api-ingress
+spec:
   ingressClassName: nginx
-  rules: 
-  - host: api.sacredsteps.duckdns.org
-    http: 
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service: 
-            name: cs-api-svc
-            port:
-              number: 80
+  rules:
+    - host: api.sacredsteps.duckdns.org
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: dorian-final-api-svc
+                port:
+                  number: 80

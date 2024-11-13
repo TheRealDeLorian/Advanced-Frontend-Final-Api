@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
- namespace: sacredsteps
- name: cs-api-svc
-spec: 
+  namespace: sacredsteps
+  name: dorian-final-api-svc
+spec:
   type: ClusterIP
   selector:
-    app: cs-api
+    app: dorian-final-api
   ports:
     - port: 80
       targetPort: 8080

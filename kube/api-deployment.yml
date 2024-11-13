@@ -2,28 +2,28 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   namespace: sacredsteps
-  name: cs-api
+  name: dorian-final-api
   labels:
-    app: cs-api
+    app: dorian-final-api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cs-api
+      app: dorian-final-api
   template:
     metadata:
       labels:
-        app: cs-api
+        app: dorian-final-api
     spec:
       containers:
-      - name: cs-api
-        image: doriancottle/dorian-final-api:${IMAGE_TAG}  
-        ports:
-        - containerPort: 8080
-        volumeMounts:
-        - name: cs-api-storage
-          mountPath: /storage  
+        - name: dorian-final-api
+          image: doriancottle/dorian-final-api:${IMAGE_TAG}
+          ports:
+            - containerPort: 8080
+          volumeMounts:
+            - name: dorian-final-api-storage
+              mountPath: /storage
       volumes:
-      - name: cs-api-storage
-        persistentVolumeClaim:
-          claimName: cs-api-pvc 
+        - name: dorian-final-api-storage
+          persistentVolumeClaim:
+            claimName: dorian-final-api-pvc
