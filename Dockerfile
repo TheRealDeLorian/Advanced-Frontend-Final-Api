@@ -14,4 +14,4 @@ COPY --from=build /app/out .
 
 EXPOSE 80
 
-CMD ["dotnet", "csapi.dll"]  
+CMD ["dotnet", "Advanced-Frontend-Final-Api.dll"]  
