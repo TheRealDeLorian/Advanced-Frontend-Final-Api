@@ -1,7 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Final_Api.Data;
 
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -14,6 +13,7 @@ builder.Services.AddDbContextFactory<AppDbContext>(options => options.UseNpgsql(
 builder.Services.AddCors();
 
 var app = builder.Build();
+
 app.UseCors(c =>
 c.AllowAnyHeader()
 .AllowAnyMethod()
