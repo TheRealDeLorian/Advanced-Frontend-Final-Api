@@ -1,8 +1,8 @@
-using MyApi.Data;
+using Final_Api.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace MyApi.Controllers;
+namespace Final_Api.Controllers;
 
 public class TempleController : ControllerBase
 {
@@ -26,7 +26,7 @@ public class TempleController : ControllerBase
     }
     catch (Exception ex)
     {
-      return temples;      
+      return temples;
     }
   }
 }

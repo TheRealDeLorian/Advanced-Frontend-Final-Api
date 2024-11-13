@@ -1,7 +1,11 @@
-namespace MyApi.Data;
+﻿using System;
+using System.Collections.Generic;
 
-public class Temple
+namespace Final_Api.Data;
+
+public partial class Temple
 {
-  public int Id {get; set;}
-  public string Name {get; set;}
+    public int Id { get; set; }
+
+    public string? Name { get; set; }
 }
