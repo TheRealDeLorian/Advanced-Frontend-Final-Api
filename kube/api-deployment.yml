@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: sacredsteps
+  name: cs-api
+  labels:
+    app: cs-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cs-api
+  template:
+    metadata:
+      labels:
+        app: cs-api
+    spec:
+      containers:
+      - name: cs-api
+        image: doriancottle/dorian-ss-api:${IMAGE_TAG}  
+        ports:
+        - containerPort: 8080
+      #   volumeMounts:
+      #   - name: cs-api-storage
+      #     mountPath: /storage  
+      # volumes:
+      # - name: cs-api-storage
+      #   persistentVolumeClaim:
+      #     claimName: cs-api-pvc 

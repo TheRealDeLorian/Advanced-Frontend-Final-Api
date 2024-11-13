@@ -1,0 +1,37 @@
+name: deployment to alex server
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - name: checkout-repo
+        uses: actions/checkout@v4
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build image
+        run: |
+          docker build -t doriancottle/dorian-final-api:${{ github.run_number }} .
+
+      - name: Push image
+        run: |
+          docker push doriancottle/dorian-final-api:${{ github.run_number }}
+      
+      - name: Deploy
+        run: | 
+          export PATH=$PATH:~/.nix-profile/bin:/nix/var/nix/profiles/default/bin
+          export IMAGE_TAG=${{ github.run_number }}
+          for file in kube/*; do
+              cat "$file" | envsubst | kubectl apply -f -;
+          done
+         
+      
+      
+    
