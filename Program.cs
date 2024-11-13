@@ -10,9 +10,14 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 var connectionString = "Server=localhost;Database=db;User Id=user;Password=password;";
 builder.Services.AddDbContextFactory<AppDbContext>(options => options.UseNpgsql(connectionString));
+builder.Services.AddCors();
 
 
 var app = builder.Build();
+app.UseCors(c =>
+c.AllowAnyHeader()
+.AllowAnyMethod()
+.AllowAnyOrigin());
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
