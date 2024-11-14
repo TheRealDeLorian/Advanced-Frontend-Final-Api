@@ -28,9 +28,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/health", () => Results.Ok("Healthy!"));
+app.MapGet("/api/health", () => Results.Ok("Healthy!"));
 
-app.MapGet("/temples", async (AppDbContext dbContext) =>
+app.MapGet("/api/temples", async (AppDbContext dbContext) =>
 {
   var temples = await dbContext.Temples.ToListAsync();
   return Results.Ok(temples);
