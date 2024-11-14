@@ -2624,23 +2624,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dorian.cottle\\.nuget\\packages\\": {},
+    "C:\\Users\\thene\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dorian.cottle\\code\\frontend\\Advanced-Frontend-Final-Api\\Advanced-Frontend-Final-Api.csproj",
+      "projectUniqueName": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Advanced-Frontend-Final-Api.csproj",
       "projectName": "Advanced-Frontend-Final-Api",
-      "projectPath": "C:\\Users\\dorian.cottle\\code\\frontend\\Advanced-Frontend-Final-Api\\Advanced-Frontend-Final-Api.csproj",
-      "packagesPath": "C:\\Users\\dorian.cottle\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dorian.cottle\\code\\frontend\\Advanced-Frontend-Final-Api\\obj\\",
+      "projectPath": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Advanced-Frontend-Final-Api.csproj",
+      "packagesPath": "C:\\Users\\thene\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\dorian.cottle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\thene\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2721,7 +2721,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

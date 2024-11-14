@@ -6,10 +6,10 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: api.sacredsteps.duckdns.org
+    - host: sacredsteps.duckdns.org
       http:
         paths:
-          - path: /
+          - path: /api
             pathType: Prefix
             backend:
               service:
