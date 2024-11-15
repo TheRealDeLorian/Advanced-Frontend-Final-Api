@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
  namespace: sacredsteps
- name: dorian-db-svc
+ name: dorian-db-svc #THIS IS THE DNS NAME (in kubernetes)
 spec: 
   type: ClusterIP
   selector:

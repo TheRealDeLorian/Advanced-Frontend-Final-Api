@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-var connectionString = "Server=sacredsteps.duckdns.org;Database=test-db;User Id=test-user;Password=test-password;";
+var connectionString = "Server=dorian-db-svc;Database=test-db;User Id=test-user;Password=test-password;";
 builder.Services.AddDbContextFactory<AppDbContext>(options => options.UseNpgsql(connectionString));
 
 builder.Services.AddCors();
