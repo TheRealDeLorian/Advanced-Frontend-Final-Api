@@ -18,7 +18,7 @@ public partial class AppDbContext : DbContext
     public virtual DbSet<Temple> Temples { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseNpgsql("Server=sacredsteps.duckdns.org;Database=db;User Id=test-user;Password=test-password;");
+        => optionsBuilder.UseNpgsql("Server=sacredsteps.duckdns.org;Database=test-db;User Id=test-user;Password=test-password;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
