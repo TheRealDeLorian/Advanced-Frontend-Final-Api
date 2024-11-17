@@ -18,7 +18,7 @@ public partial class AppDbContext : DbContext
     public virtual DbSet<Temple> Temples { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseNpgsql("Server=dorian-db-svc;Database=test-db;User Id=test-user;Password=test-password;");
+        => optionsBuilder.UseNpgsql("Server=localhost;Database=test-db;User Id=test-user;Password=test-password;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
