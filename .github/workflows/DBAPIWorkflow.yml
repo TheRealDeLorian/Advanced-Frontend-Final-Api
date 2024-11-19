@@ -33,6 +33,7 @@ jobs:
 
           kubectl -n sacredsteps set env deployment/dorian-final-api CONNECTION_STRINGS__DEFAULTCONNECTION="${{ secrets.CONNECTION_STRING }}"
 
+          kubectl delete secret my-secrets || true
           kubectl create secret generic my-secrets \
           --from-literal=CONNECTION_STRING="${{ secrets.CONNECTION_STRING }}" \
           -n sacredsteps
