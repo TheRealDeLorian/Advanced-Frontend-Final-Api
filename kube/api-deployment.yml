@@ -22,7 +22,7 @@ spec:
             - containerPort: 8080
           env:
             - name: ConnectionStrings__DefaultConnection
-              value: "${{ secrets.CONNECTION_STRING }}"
+              value: "Host=localhost;Database=test-db;Username=test-user;Password=test-password"
           volumeMounts:
             - name: dorian-final-api-storage
               mountPath: /storage
