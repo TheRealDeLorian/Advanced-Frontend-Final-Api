@@ -1,0 +1,6 @@
+env:
+  - name: ConnectionStrings__DefaultConnection
+    valueFrom:
+      configMapKeyRef:
+        name: ss-postgres-init
+        key: ConnectionStrings__DefaultConnection

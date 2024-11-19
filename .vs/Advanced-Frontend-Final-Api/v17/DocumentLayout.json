@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\dorian.cottle\\code\\frontend\\Advanced-Frontend-Final-Api\\",
+  "WorkspaceRootPath": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|c:\\users\\dorian.cottle\\code\\frontend\\advanced-frontend-final-api\\schema.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|solutionrelative:schema.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+      "AbsoluteMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|c:\\users\\thene\\code\\advfrontend\\advanced-frontend-final-api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|c:\\users\\dorian.cottle\\code\\frontend\\advanced-frontend-final-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|c:\\users\\thene\\code\\advfrontend\\advanced-frontend-final-api\\controllers\\templecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|solutionrelative:controllers\\templecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|c:\\users\\thene\\code\\advfrontend\\advanced-frontend-final-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|c:\\users\\dorian.cottle\\code\\frontend\\advanced-frontend-final-api\\data\\temple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|c:\\users\\thene\\code\\advfrontend\\advanced-frontend-final-api\\data\\temple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|solutionrelative:data\\temple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|c:\\users\\dorian.cottle\\code\\frontend\\advanced-frontend-final-api\\schema.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|solutionrelative:schema.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,45 +26,108 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 10,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "schema.sql ",
-              "DocumentMoniker": "C:\\Users\\dorian.cottle\\code\\frontend\\Advanced-Frontend-Final-Api\\schema.sql",
-              "RelativeDocumentMoniker": "schema.sql",
-              "ToolTip": "C:\\Users\\dorian.cottle\\code\\frontend\\Advanced-Frontend-Final-Api\\schema.sql",
-              "RelativeToolTip": "schema.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-11-11T16:47:58.61Z",
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwCUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T02:53:13.193Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "TempleController.cs",
+              "DocumentMoniker": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Controllers\\TempleController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TempleController.cs",
+              "ToolTip": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Controllers\\TempleController.cs",
+              "RelativeToolTip": "Controllers\\TempleController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T02:53:06.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\dorian.cottle\\code\\frontend\\Advanced-Frontend-Final-Api\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\dorian.cottle\\code\\frontend\\Advanced-Frontend-Final-Api\\Program.cs",
+              "ToolTip": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-11T16:45:32.275Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Temple.cs",
-              "DocumentMoniker": "C:\\Users\\dorian.cottle\\code\\frontend\\Advanced-Frontend-Final-Api\\Data\\Temple.cs",
+              "DocumentMoniker": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Data\\Temple.cs",
               "RelativeDocumentMoniker": "Data\\Temple.cs",
-              "ToolTip": "C:\\Users\\dorian.cottle\\code\\frontend\\Advanced-Frontend-Final-Api\\Data\\Temple.cs",
+              "ToolTip": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Data\\Temple.cs",
               "RelativeToolTip": "Data\\Temple.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T16:45:29.381Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T16:45:29.381Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 358,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             }
           ]
         }

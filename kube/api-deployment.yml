@@ -20,6 +20,12 @@ spec:
           image: doriancottle/dorian-final-api:${IMAGE_TAG}
           ports:
             - containerPort: 8080
+           env:
+            - name: ConnectionStrings__DefaultConnection
+              valueFrom:
+                configMapKeyRef:
+                  name: dorian-final-api-config
+                  key: ConnectionStrings__DefaultConnection
           volumeMounts:
             - name: dorian-final-api-storage
               mountPath: /storage

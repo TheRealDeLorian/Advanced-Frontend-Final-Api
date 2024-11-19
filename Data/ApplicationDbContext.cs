@@ -6,19 +6,12 @@ namespace Final_Api.Data;
 
 public partial class AppDbContext : DbContext
 {
-    public AppDbContext()
-    {
-    }
-
-    public AppDbContext(DbContextOptions<DbContext> options)
+    public AppDbContext(DbContextOptions<AppDbContext> options)
         : base(options)
     {
     }
 
     public virtual DbSet<Temple> Temples { get; set; }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseNpgsql("Server=localhost;Database=test-db;User Id=test-user;Password=test-password;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
