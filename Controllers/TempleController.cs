@@ -13,7 +13,7 @@ public class TempleController : ControllerBase
     _context = context;
   }
 
-  [HttpGet("/temples")]
+  [HttpGet("/api/temples")]
   public async Task<ActionResult<IEnumerable<Temple>>> GetAllTemplesAsync()
   {
     var temples = new List<Temple>();
