@@ -35,7 +35,7 @@ jobs:
           done
 
           kubectl -n sacredsteps delete configmap ss-postgres-init || true
-          kubectl -n sacredsteps create configmap ss-postgres-init --from-literal=ConnectionStrings__DefaultConnection="$CONNECTION_STRING" --from-file=./schema.sql
+          kubectl -n sacredsteps create configmap ss-postgres-init --from-file=./schema.sql
          
       
       

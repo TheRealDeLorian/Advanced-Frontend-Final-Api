@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: ss-postgres-init
-  namespace: sacredsteps
-data:
-  ConnectionStrings__DefaultConnection: "${CONNECTION_STRING}"
