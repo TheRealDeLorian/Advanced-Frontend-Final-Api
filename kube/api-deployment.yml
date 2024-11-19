@@ -22,10 +22,7 @@ spec:
             - containerPort: 8080
           env:
             - name: ConnectionStrings__DefaultConnection
-              valueFrom:
-                secretKeyRef:
-                  name: my-secrets
-                  key: NEW_CONNECTION_STRING
+              value: ${NEW_CONNECTION_STRING}
           volumeMounts:
             - name: dorian-final-api-storage
               mountPath: /storage

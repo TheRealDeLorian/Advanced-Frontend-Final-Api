@@ -33,7 +33,7 @@ jobs:
 
           kubectl -n sacredsteps set env deployment/dorian-final-api CONNECTION_STRINGS__DEFAULTCONNECTION="${{ secrets.NEW_CONNECTION_STRING }}"
 
-         
+          
 
           for file in kube/*; do
               cat "$file" | envsubst | kubectl apply -f -;
