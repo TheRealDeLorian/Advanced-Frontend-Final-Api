@@ -26,12 +26,12 @@ jobs:
       
       - name: Deploy
         env: 
-          CONNECTION_STRING: ${{ secrets.CONNECTION_STRING }}
+          NEW_CONNECTION_STRING: ${{ secrets.NEW_CONNECTION_STRING }}
         run: | 
           export PATH=$PATH:~/.nix-profile/bin:/nix/var/nix/profiles/default/bin
           export IMAGE_TAG=${{ github.run_number }}
 
-          kubectl -n sacredsteps set env deployment/dorian-final-api CONNECTION_STRINGS__DEFAULTCONNECTION="${{ secrets.CONNECTION_STRING }}"
+          kubectl -n sacredsteps set env deployment/dorian-final-api CONNECTION_STRINGS__DEFAULTCONNECTION="${{ secrets.NEW_CONNECTION_STRING }}"
 
          
 
