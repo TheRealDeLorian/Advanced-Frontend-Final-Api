@@ -1,6 +1,7 @@
-env:
-  - name: ConnectionStrings__DefaultConnection
-    valueFrom:
-      configMapKeyRef:
-        name: ss-postgres-init
-        key: ConnectionStrings__DefaultConnection
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ss-postgres-init
+  namespace: sacredsteps
+data:
+  ConnectionStrings__DefaultConnection: "${CONNECTION_STRING}"
