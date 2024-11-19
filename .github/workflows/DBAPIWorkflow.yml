@@ -30,6 +30,9 @@ jobs:
         run: | 
           export PATH=$PATH:~/.nix-profile/bin:/nix/var/nix/profiles/default/bin
           export IMAGE_TAG=${{ github.run_number }}
+
+          kubectl -n sacredsteps set env deployment/dorian-final-api CONNECTION_STRINGS__DEFAULTCONNECTION="${{ secrets.CONNECTION_STRING }}"
+
           for file in kube/*; do
               cat "$file" | envsubst | kubectl apply -f -;
           done
