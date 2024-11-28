@@ -34,10 +34,4 @@ app.UseHttpsRedirection();
 
 app.MapGet("/api/health", () => Results.Ok("Healthy!"));
 
-// app.MapGet("/api/temples", async (Testdbcontext dbContext) =>
-// {
-//   var temples = await dbContext.Temples.ToListAsync();
-//   return Results.Ok(temples);
-// });
-
 app.Run();
