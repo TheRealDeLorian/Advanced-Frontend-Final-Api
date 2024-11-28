@@ -1,14 +1,15 @@
-using Final_Api.Data;
+using Advanced_Frontend_Final_Api.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace Final_Api.Controllers;
+namespace Advanced_Frontend_Final_Api.Controllers;
+
 
 public class TempleController : ControllerBase
 {
-  private readonly IDbContextFactory<AppDbContext> _context;
+  private readonly IDbContextFactory<TestDbContext> _context;
 
-  public TempleController(IDbContextFactory<AppDbContext> context)
+  public TempleController(IDbContextFactory<TestDbContext> context)
   {
     _context = context;
   }
