@@ -258,3 +258,7 @@ C:\Users\dorian.cottle\code\frontend\Advanced-Frontend-Final-Api\bin\Debug\net8.
 C:\Users\dorian.cottle\code\frontend\Advanced-Frontend-Final-Api\bin\Debug\net8.0\Advanced-Frontend-Final-Api.pdb
 C:\Users\dorian.cottle\code\frontend\Advanced-Frontend-Final-Api\obj\Debug\net8.0\Advanced-Frontend-Final-Api.genruntimeconfig.cache
 C:\Users\dorian.cottle\code\frontend\Advanced-Frontend-Final-Api\obj\Debug\net8.0\ref\Advanced-Frontend-Final-Api.dll
+C:\Users\thene\code\advfrontend\Advanced-Frontend-Final-Api\bin\Debug\net8.0\Advanced-Frontend-Final-Api.staticwebassets.endpoints.json
+C:\Users\thene\code\advfrontend\Advanced-Frontend-Final-Api\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\thene\code\advfrontend\Advanced-Frontend-Final-Api\obj\Debug\net8.0\staticwebassets\msbuild.Advanced-Frontend-Final-Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\thene\code\advfrontend\Advanced-Frontend-Final-Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

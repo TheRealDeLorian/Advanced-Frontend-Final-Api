@@ -16,16 +16,68 @@
     ]
   },
   {
-    "ContainingType": "Final_Api.Controllers.TempleController",
+    "ContainingType": "Advanced_Frontend_Final_Api.Controllers.TempleController",
     "Method": "GetAllTemplesAsync",
-    "RelativePath": "temples",
+    "RelativePath": "api/temples",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Final_Api.Data.Temple, Advanced-Frontend-Final-Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Advanced_Frontend_Final_Api.Models.Temple, Advanced-Frontend-Final-Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Advanced_Frontend_Final_Api.Controllers.VisitController",
+    "Method": "AddNewVisit",
+    "RelativePath": "api/Visit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "visitDto",
+        "Type": "Advanced_Frontend_Final_Api.Controllers.VisitDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Advanced_Frontend_Final_Api.Models.Visit",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Advanced_Frontend_Final_Api.Controllers.VisitController",
+    "Method": "GetVisitsByUserId",
+    "RelativePath": "api/Visit/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Advanced_Frontend_Final_Api.Models.Visit, Advanced-Frontend-Final-Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

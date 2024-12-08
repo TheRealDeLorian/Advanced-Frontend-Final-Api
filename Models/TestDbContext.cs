@@ -6,6 +6,9 @@ namespace Advanced_Frontend_Final_Api.Models;
 
 public partial class TestDbContext : DbContext
 {
+    public TestDbContext()
+    {
+    }
 
     public TestDbContext(DbContextOptions<TestDbContext> options)
         : base(options)
@@ -18,17 +21,19 @@ public partial class TestDbContext : DbContext
 
     public virtual DbSet<Visit> Visits { get; set; }
 
-    public virtual DbSet<Visitphoto> Visitphotos { get; set; }
+    public virtual DbSet<VisitPhoto> VisitPhotos { get; set; }
 
-        //"Host=localhost;Port=5432;Database=test-db;Username=test-user;Password=test-password"
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+        => optionsBuilder.UseNpgsql("Host=localhost;db=test-db;Username=test-user;Password=test-password;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Person>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("people_pkey");
+            entity.HasKey(e => e.Id).HasName("person_pkey");
 
-            entity.ToTable("people");
+            entity.ToTable("person");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Email).HasColumnName("email");
@@ -39,29 +44,36 @@ public partial class TestDbContext : DbContext
 
         modelBuilder.Entity<Temple>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("temples_pkey");
+            entity.HasKey(e => e.Id).HasName("temple_pkey");
 
-            entity.ToTable("temples");
+            entity.ToTable("temple");
 
             entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Lat).HasColumnName("lat");
+            entity.Property(e => e.Long).HasColumnName("long");
             entity.Property(e => e.Mailaddress).HasColumnName("mailaddress");
             entity.Property(e => e.Photourl).HasColumnName("photourl");
-            entity.Property(e => e.Pluscode).HasColumnName("pluscode");
             entity.Property(e => e.Templename).HasColumnName("templename");
         });
 
         modelBuilder.Entity<Visit>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("visits_pkey");
+            entity.HasKey(e => e.Id).HasName("visit_pkey");
 
-            entity.ToTable("visits");
+            entity.ToTable("visit");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Note).HasColumnName("note");
+            entity.Property(e => e.Personid).HasColumnName("personid");
             entity.Property(e => e.Templeid).HasColumnName("templeid");
             entity.Property(e => e.Visittime)
-                .HasColumnType("timestamp without time zone")
+                .HasColumnType("timestamp with time zone")
                 .HasColumnName("visittime");
+
+            entity.HasOne(d => d.Person).WithMany(p => p.Visits)
+                .HasForeignKey(d => d.Personid)
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("fk_person");
 
             entity.HasOne(d => d.Temple).WithMany(p => p.Visits)
                 .HasForeignKey(d => d.Templeid)
@@ -69,15 +81,20 @@ public partial class TestDbContext : DbContext
                 .HasConstraintName("fk_temple");
         });
 
-        modelBuilder.Entity<Visitphoto>(entity =>
+        modelBuilder.Entity<VisitPhoto>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("visitphotos_pkey");
+            entity.HasKey(e => e.Id).HasName("visit_photo_pkey");
 
-            entity.ToTable("visitphotos");
+            entity.ToTable("visit_photo");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Photourl).HasColumnName("photourl");
             entity.Property(e => e.Visitid).HasColumnName("visitid");
+
+            entity.HasOne(d => d.Visit).WithMany(p => p.VisitPhotos)
+                .HasForeignKey(d => d.Visitid)
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("fk_visit");
         });
 
         OnModelCreatingPartial(modelBuilder);

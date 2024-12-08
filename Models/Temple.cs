@@ -9,7 +9,9 @@ public partial class Temple
 
     public string? Templename { get; set; }
 
-    public string? Pluscode { get; set; }
+    public string? Lat { get; set; }
+
+    public string? Long { get; set; }
 
     public string? Mailaddress { get; set; }
 

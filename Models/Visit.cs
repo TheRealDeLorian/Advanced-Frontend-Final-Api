@@ -11,7 +11,13 @@ public partial class Visit
 
     public string? Note { get; set; }
 
+    public int? Personid { get; set; }
+
     public int? Templeid { get; set; }
 
+    public virtual Person? Person { get; set; }
+
     public virtual Temple? Temple { get; set; }
+
+    public virtual ICollection<VisitPhoto> VisitPhotos { get; set; } = new List<VisitPhoto>();
 }

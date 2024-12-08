@@ -14,4 +14,6 @@ public partial class Person
     public string? Email { get; set; }
 
     public string? Pfpurl { get; set; }
+
+    public virtual ICollection<Visit> Visits { get; set; } = new List<Visit>();
 }

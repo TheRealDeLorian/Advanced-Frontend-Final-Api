@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "BklbCo2QdrciSkYJpdOeNSyXb04ZCYZ5TWHyanE71nA=",
+  "Hash": "R/brxLnXg4D11ti3Z2bs9cr53/m22GdeiNm4w2G60iY=",
   "Source": "Advanced-Frontend-Final-Api",
   "BasePath": "_content/Advanced-Frontend-Final-Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

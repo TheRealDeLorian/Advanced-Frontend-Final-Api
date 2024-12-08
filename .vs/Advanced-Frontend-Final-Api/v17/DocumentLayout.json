@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|c:\\users\\thene\\code\\advfrontend\\advanced-frontend-final-api\\models\\testdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|solutionrelative:models\\testdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|c:\\users\\thene\\code\\advfrontend\\advanced-frontend-final-api\\controllers\\visitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|solutionrelative:controllers\\visitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|c:\\users\\thene\\code\\advfrontend\\advanced-frontend-final-api\\controllers\\visitdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|solutionrelative:controllers\\visitdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|c:\\users\\thene\\code\\advfrontend\\advanced-frontend-final-api\\controllers\\templecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|solutionrelative:controllers\\templecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|c:\\users\\thene\\code\\advfrontend\\advanced-frontend-final-api\\data\\temple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|solutionrelative:data\\temple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|c:\\users\\thene\\code\\advfrontend\\advanced-frontend-final-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|c:\\users\\thene\\code\\advfrontend\\advanced-frontend-final-api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE7DAF5A-6072-457A-ACF4-910042DCEE72}|Advanced-Frontend-Final-Api.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,60 +70,60 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T02:53:13.193Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TempleController.cs",
-              "DocumentMoniker": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Controllers\\TempleController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TempleController.cs",
-              "ToolTip": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Controllers\\TempleController.cs",
-              "RelativeToolTip": "Controllers\\TempleController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAEAAAAAAAAAA==",
+              "Title": "TestDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Models\\TestDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\TestDbContext.cs",
+              "ToolTip": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Models\\TestDbContext.cs",
+              "RelativeToolTip": "Models\\TestDbContext.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAwEkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T02:53:06.896Z",
+              "WhenOpened": "2024-12-08T23:41:03.497Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Title": "VisitDTO.cs",
+              "DocumentMoniker": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Controllers\\VisitDTO.cs",
+              "RelativeDocumentMoniker": "Controllers\\VisitDTO.cs",
+              "ToolTip": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Controllers\\VisitDTO.cs",
+              "RelativeToolTip": "Controllers\\VisitDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T16:45:32.275Z",
+              "WhenOpened": "2024-12-08T23:32:52.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TempleController.cs",
+              "DocumentMoniker": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Controllers\\TempleController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TempleController.cs",
+              "ToolTip": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Controllers\\TempleController.cs",
+              "RelativeToolTip": "Controllers\\TempleController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T23:26:49.072Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Temple.cs",
-              "DocumentMoniker": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Data\\Temple.cs",
-              "RelativeDocumentMoniker": "Data\\Temple.cs",
-              "ToolTip": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Data\\Temple.cs",
-              "RelativeToolTip": "Data\\Temple.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "VisitController.cs",
+              "DocumentMoniker": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Controllers\\VisitController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VisitController.cs",
+              "ToolTip": "C:\\Users\\thene\\code\\advfrontend\\Advanced-Frontend-Final-Api\\Controllers\\VisitController.cs",
+              "RelativeToolTip": "Controllers\\VisitController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAA9wCoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T16:45:29.381Z",
+              "WhenOpened": "2024-12-08T23:13:37.905Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 358,
+          "DockedWidth": 272,
           "SelectedChildIndex": -1,
           "Children": [
             {
