@@ -23,7 +23,7 @@ namespace Advanced_Frontend_Final_Api.Controllers
             try
             {
                 await using var context = _contextFactory.CreateDbContext();
-                var visits = await context.Visits.ToListAsync();
+                var visits = await context.Visits.Where(v => v.Personid == userId).ToListAsync();
                 return Ok(visits);
             }
             catch
