@@ -6,10 +6,6 @@ namespace Advanced_Frontend_Final_Api.Models;
 
 public partial class TestDbContext : DbContext
 {
-    public TestDbContext()
-    {
-    }
-
     public TestDbContext(DbContextOptions<TestDbContext> options)
         : base(options)
     {
