@@ -4,7 +4,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Advanced_Frontend_Final_Api.Controllers;
 
-
+[Route("api/[controller]")]
+[ApiController]
 public class TempleController : ControllerBase
 {
   private readonly IDbContextFactory<TestDbContext> _context;
@@ -14,7 +15,7 @@ public class TempleController : ControllerBase
     _context = context;
   }
 
-  [HttpGet("/api/temples")]
+  [HttpGet]
   public async Task<ActionResult<IEnumerable<Temple>>> GetAllTemplesAsync()
   {
     var temples = new List<Temple>();

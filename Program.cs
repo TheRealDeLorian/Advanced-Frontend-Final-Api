@@ -13,6 +13,8 @@ builder.Services.AddDbContextFactory<TestDbContext>(options => options.UseNpgsql
 builder.Services.AddControllers();
 builder.Services.AddSingleton<TempleController>();
 builder.Services.AddSingleton<VisitController>();
+builder.Services.AddSingleton<PersonController>();
+
 builder.Services.AddCors();
 
 var app = builder.Build();

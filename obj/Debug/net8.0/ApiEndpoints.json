@@ -16,9 +16,55 @@
     ]
   },
   {
+    "ContainingType": "Advanced_Frontend_Final_Api.Controllers.PersonController",
+    "Method": "GetAllPeopleAsync",
+    "RelativePath": "api/Person",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Advanced_Frontend_Final_Api.Models.Person, Advanced-Frontend-Final-Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Advanced_Frontend_Final_Api.Controllers.PersonController",
+    "Method": "GetPersonIdByEmailAsync",
+    "RelativePath": "api/Person/{email}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Advanced_Frontend_Final_Api.Controllers.TempleController",
     "Method": "GetAllTemplesAsync",
-    "RelativePath": "api/temples",
+    "RelativePath": "api/Temple",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -86,5 +132,21 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "VisitsController",
+    "Method": "AddVisit",
+    "RelativePath": "api/Visits",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "visit",
+        "Type": "Advanced_Frontend_Final_Api.Models.Visit",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
